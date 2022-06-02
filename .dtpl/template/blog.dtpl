@@ -1,0 +1,18 @@
+---
+title: $blogName
+date: $datetime
+tags:
+ - $category
+categories:
+ - $category
+---
+
+# $blogName
+
+<div style="color: #999999; font-size: 12px;">
+    <span>创建时间：$datetime</span>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <span>更新时间：$datetime</span>
+</div>
+<br/>
+

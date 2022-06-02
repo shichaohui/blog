@@ -1,0 +1,20 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "石朝辉的博客",
+  "repository": "git@github.com:shichaohui/blog.git",
+  "author": "StoneHui <464206200@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vuepress dev .",
+    "build": "vuepress build ."
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "dot-template-types": "^0.3.0",
+    "ts-node": "^10.8.0",
+    "typescript": "^4.7.2",
+    "vuepress": "2.0.0-beta.46",
+    "vuepress-theme-reco": "2.0.0-beta.8"
+  }
+}
