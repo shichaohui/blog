@@ -1,5 +1,5 @@
 yarn-error.log
 node_modules
-.vuepress/.cache
-.vuepress/.temp
-dist
+docs/.vuepress/.cache
+docs/.vuepress/.temp
+docs/.vuepress/dist
