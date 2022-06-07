@@ -5,22 +5,7 @@ export default defineUserConfig({
   title: "石朝辉的博客",
   description: "石朝辉的博客",
   base: "/blog/",
-  head: [
-    [
-      "link",
-      {
-        rel: "icon",
-        href: "/logo.png",
-      },
-    ],
-    [
-      "meta",
-      {
-        name: "viewport",
-        content: "width=device-width,initial-scale=1,user-scalable=no",
-      },
-    ],
-  ],
+  head: [["link", { rel: "icon", href: "/logo.png" }]],
   theme: recoTheme({
     style: "@vuepress-reco/style-default",
     logo: "/logo.png",
@@ -61,10 +46,6 @@ export default defineUserConfig({
         link: "/tags/FrontEnd/1/",
       },
       {
-        text: "|",
-        link: "/",
-      },
-      {
         text: "个人主页",
         link: "https://shichaohui.github.io",
       },
@@ -75,8 +56,6 @@ export default defineUserConfig({
     ],
     search: true,
     searchMaxSuggestions: 10,
-    series: {},
-    lastUpdated: "Last Updated",
-    bulletin: {},
   }),
+  pagePatterns: ["**/*.md", "!.vuepress", "!node_modules", "!README.md"],
 });

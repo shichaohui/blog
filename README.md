@@ -1,18 +1,5 @@
----
-home: true
-modules:
-  - Banner
-  - Blog
-banner:
-  heroText: 石朝辉的博客
-  tagline: 随便写点儿东西
-  bgImage: '/bg.svg'
-  bgImageStyle: 
-    height: "0px"
-    padding: "200px 0 100px 0"
-    background-position: "top"
-blog:
-  socialLinks:
-    - { icon: "BrandGithub", link: "https://github.com/shichaohui"}
-    - { icon: "User", link: "https://shichaohui.github.io"}
----
+# Blog
+
+使用 [vuepress-theme-reco](https://github.com/vuepress-reco/vuepress-theme-reco) 主题搭建的博客，用来发布一些技术文章和笔记。
+
+访问地址：[https://shichaohui.github.io/blog](https://shichaohui.github.io/blog)
