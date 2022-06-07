@@ -9,7 +9,7 @@ export default defineUserConfig({
   theme: recoTheme({
     style: "@vuepress-reco/style-default",
     logo: "/logo.png",
-    author: "石朝辉 <464206200@qq.com>",
+    author: "石朝辉",
     authorAvatar: "/logo.png",
     navbar: [
       {
@@ -56,5 +56,6 @@ export default defineUserConfig({
     ],
     search: true,
     searchMaxSuggestions: 10,
+    lastUpdatedText: "最后更新于",
   }),
 });

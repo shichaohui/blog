@@ -9,10 +9,10 @@ banner:
   bgImage: '/bg.svg'
   bgImageStyle: 
     height: "0px"
-    padding: "200px 0 100px 0"
+    padding: "240px 0 160px 0"
     background-position: "top"
 blog:
   socialLinks:
-    - { icon: "BrandGithub", link: "https://github.com/shichaohui"}
-    - { icon: "User", link: "https://shichaohui.github.io"}
+    - { icon: "User", link: "https://shichaohui.github.io", color: "#4954e6" }
+    - { icon: "BrandGithub", link: "https://github.com/shichaohui", color: "#4954e6" }
 ---
