@@ -12,7 +12,7 @@ categories:
 参考文档： 
 
 * [RxJava JavaDoc](http://reactivex.io/RxJava/javadoc) 
-* [ReactiveX文档中文翻译](https://www.gitbook.com/book/mcxiaoke/rxdocs/details)
+* [ReactiveX 文档中文翻译](https://www.gitbook.com/book/mcxiaoke/rxdocs/details)
 
 [定义链接]: http://
 [Observable]: http://reactivex.io/RxJava/javadoc/rx/Observable.html
@@ -161,7 +161,7 @@ Observable<Long> observable = Observable.interval(1, TimeUnit.SECONDS);
 
 ### 1.5 timer( )
 
-创建一个在指定延迟时间后发射一条数据（<font color="#999999"> 固定值：0 </font>）的 [Observable] 对象，可用来做定时操作。
+创建一个在指定延迟时间后发射一条数据（<span color="#999999"> 固定值：0 </span>）的 [Observable] 对象，可用来做定时操作。
 
 **方法列表：**
 

@@ -17,7 +17,7 @@ categories:
 参考文档： 
 
 * [RxJava JavaDoc](http://reactivex.io/RxJava/javadoc) 
-* [ReactiveX文档中文翻译](https://www.gitbook.com/book/mcxiaoke/rxdocs/details)
+* [ReactiveX 文档中文翻译](https://www.gitbook.com/book/mcxiaoke/rxdocs/details)
 
 [定义链接]: http://
 [Observable]: http://reactivex.io/RxJava/javadoc/rx/Observable.html
