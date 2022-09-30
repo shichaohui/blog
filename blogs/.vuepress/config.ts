@@ -57,5 +57,6 @@ export default defineUserConfig({
     search: true,
     searchMaxSuggestions: 10,
     lastUpdatedText: "最后更新于",
+    componentsDir: "./blogs/.vuepress/components",
   }),
 });
