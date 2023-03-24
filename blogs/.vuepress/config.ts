@@ -13,12 +13,12 @@ export default defineUserConfig({
     authorAvatar: "/logo.png",
     navbar: [
       {
-        text: "首页",
-        link: "/",
-      },
-      {
         text: "分类",
         children: [
+          {
+            text: "全部",
+            link: "/categories/FrontEnd/1/",
+          },
           {
             text: "前端",
             link: "/categories/FrontEnd/1/",
@@ -56,6 +56,7 @@ export default defineUserConfig({
     ],
     search: true,
     searchMaxSuggestions: 10,
+    catalogTitle: "目录",
     lastUpdatedText: "最后更新于",
     componentsDir: "./blogs/.vuepress/components",
   }),
