@@ -1,1 +1,0 @@
-const t=JSON.parse('{"key":"v-a75e42dc","path":"/tags/gongchangmoshi/1/","title":"","lang":"en-US","frontmatter":{"layout":"Categories"},"headers":[],"git":{},"filePathRelative":null}');export{t as data};
