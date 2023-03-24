@@ -1,0 +1,11 @@
+import{_ as s,p as d,q as c,s as n,R as e,t as l,a0 as o,n as t}from"./framework-94b9cb5f.js";const i={},r=o("<p>今天换了台手机进行测试，但是手机连上之后却不能选择要输出 log 的应用（选应用的位置显示 <code>No Debuggable Applications</code>），导致 <code>logcat</code> 中不断打印出一行行 log，而从这茫茫 log 中找出自己需要的 log 是恨痛苦的，咋办咧？Google 呗。</p><p>通过谷歌发现，大家解决此问题的方式大都是这样：</p><blockquote><p>从<code> Android Studio</code> 的工具栏依次选择 <code>Tools</code> -&gt; <code>Android</code> -&gt;<code> Enable ADB Integration</code>。 如果 <code>Enable ADB Integration</code> 已经被选中，则先取消选中再重新选中。然后就不会出现 <code>No Debuggable Applications</code> 的提示了，可以选择显示指定 app 的 log 了。</p></blockquote><p>既然大家都这么写，那么这种方式应该是能解决问题的。</p>",4),p=n("code",null,"Android Studio",-1),u={href:"http://blog.csdn.net/liang9zi/article/details/41958897",target:"_blank",rel:"noopener noreferrer"},g=n("code",null,"app/build.gradle",-1),b=n("code",null,"debuggable true",-1),_=o(`<div class="language-groovy line-numbers-mode" data-ext="groovy"><pre class="language-groovy"><code>android <span class="token punctuation">{</span>
+
+    <span class="token punctuation">...</span>
+
+    buildTypes <span class="token punctuation">{</span>
+        release <span class="token punctuation">{</span>
+            debuggable <span class="token boolean">true</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>看到这里我突然想起来，我设置的是运行时自动运行 <code>release</code> 的包，赶紧尝试了一下，果然解决了问题。</p><p>估计第一种方式只对 <code>debug</code> 包有用，如果要调试 <code>release</code> 包，要使用第二种方法。当然，第二种方法有一个前提就是 <code>Enable ADB Integration</code> 要打开，也就是第一种方法的步骤要先执行一遍。</p>`,3);function v(m,k){const a=t("ExternalLinkIcon");return d(),c("div",null,[r,n("p",null,[e("然并卵... 我不断的重复上述步骤并重启 "),p,e("，它并不能解决我的问题。继续 Google 了发现了"),n("a",u,[e("这篇文章"),l(a)]),e("，它通过在 "),g,e(" 中添加 "),b,e(" 解决问题：")]),_])}const A=s(i,[["render",v],["__file","Android Studio No Debuggable Applications.html.vue"]]);export{A as default};
