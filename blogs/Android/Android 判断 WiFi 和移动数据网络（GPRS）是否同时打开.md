@@ -67,7 +67,7 @@ public static boolean isAllEnable(Context context) {
 
 观察 `ConnectivityManager` 源码发现有这么一个函数：
 
-![ConnectivityManager #getMobileDataEnabled()](https://upload-images.jianshu.io/upload_images/1837368-babc420cfe7f0a25.png?imageMogr2/auto-orient/strip|imageView2/2/w/640/format/webp)
+![ConnectivityManager#getMobileDataEnabled()](https://s1.ax1x.com/2023/03/24/ppBGcKf.png)
 
 尝试使用反射调用该函数判断 `WiFi` 开启时 `GPRS` 的状态发现是可行的。
 

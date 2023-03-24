@@ -9,7 +9,7 @@ categories:
  - Android
 ---
 
-![demo](https://upload-images.jianshu.io/upload_images/1837368-636807121e6b206f.gif?imageMogr2/auto-orient/strip|imageView2/2/w/462/format/webp)
+![demo preview](https://s1.ax1x.com/2023/03/24/ppBG881.png)
 
 [BaseRecyclerViewAdapterHelper](https://github.com/CymChad/BaseRecyclerViewAdapterHelper)
 
