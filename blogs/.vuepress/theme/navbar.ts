@@ -6,10 +6,6 @@ const navbar = [
     text: "分类",
     children: [
       {
-        text: "全部",
-        link: "/categories/FrontEnd/1/",
-      },
-      {
         text: "前端",
         link: "/categories/FrontEnd/1/",
       },
@@ -28,6 +24,10 @@ const navbar = [
       {
         text: "Python",
         link: "/categories/Python/1/",
+      },
+      {
+        text: "更多",
+        link: "/categories/Cocos/1/",
       },
     ],
   },
