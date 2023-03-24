@@ -17,7 +17,7 @@ categories:
 
 效果预览，嗯...看起来有点卡，截图软件的问题：
 
-![带动画的下拉刷新RecyclerView](https://img-blog.csdnimg.cn/img_convert/8846a50682d278a90abff04909803006.gif)
+![带动画的下拉刷新RecyclerView](https://img-blog.csdn.net/20150808145428151)
 
 **上图中演示了三种不同的布局和下拉效果，三种布局和三种下拉效果可以通过 Header 的设置任意组合。**
 

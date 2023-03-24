@@ -10,11 +10,11 @@ categories:
 
 使用 `lambda` 可以大大简化代码：
 
-http://www.oschina.net/question/12_59047
+[Java 8 的 lambda 表达式](http://www.oschina.net/question/12_59047)
 
-http://blog.csdn.net/wangboxian/article/details/41963205
+[Lambda表达式详细总结](http://blog.csdn.net/wangboxian/article/details/41963205)
 
-`Android` 中使用 `lambda` 需要 `java 8` 的支持，下载地址：http://www.androiddevtools.cn/
+`Android` 中使用 `lambda` 需要 `java 8` 的支持，[下载地址](http://www.androiddevtools.cn/)
 
 `Android Studio` 中使用 `lambda` 只需要在 `build.gradle` 文件中进行以下配置并 `rebuild` 即可：
 

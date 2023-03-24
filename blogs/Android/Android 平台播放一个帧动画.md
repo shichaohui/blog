@@ -29,7 +29,7 @@ categories:
 
 程序效果图：
 
-![帧动画效果](https://img-blog.csdnimg.cn/img_convert/d32b3ba7bcf01b6bca9f497d39aadaed.gif)
+![帧动画效果](https://img-blog.csdn.net/20150711130119461)
 
 **MainActivity.java:**
 

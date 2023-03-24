@@ -128,7 +128,7 @@ fragmentTransaction.replace(容器View的id, Fragment实例);
 fragmentTransaction.replace(容器View的id, Fragment实例, tag);  
 ```
 
-**注意：**在添加、删除和替换操作之后，都需要调用 `fragmentTransaction.commit()` 方法提交事务
+**注意：** 在添加、删除和替换操作之后，都需要调用 `fragmentTransaction.commit()` 方法提交事务
 
 ## Fragment back 栈的管理
 

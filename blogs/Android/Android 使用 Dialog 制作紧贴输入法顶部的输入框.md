@@ -10,7 +10,7 @@ categories:
 
 ## 效果预览
 
-![紧贴输入法](http://upload-images.jianshu.io/upload_images/1837368-17976210d8f66e9c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/300)
+![紧贴输入法](https://upload-images.jianshu.io/upload_images/1837368-17976210d8f66e9c.png?imageMogr2/auto-orient/strip|imageView2/2/w/1080/format/webp)
 
 ## 特性
 

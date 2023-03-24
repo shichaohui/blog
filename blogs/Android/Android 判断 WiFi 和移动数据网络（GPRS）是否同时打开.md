@@ -39,7 +39,7 @@ public static boolean isMobileEnable(Context context) {
 
 ## 判断 WiFi 与 GPRS 同开（1）
 
-**尝试：**使用 `isWifiEnable()` 和 `isMobileEnable()` 联合判断。
+**尝试：** 使用 `isWifiEnable()` 和 `isMobileEnable()` 联合判断。
 
 ```java
 public static boolean isAllEnable(Context context) {
@@ -47,7 +47,7 @@ public static boolean isAllEnable(Context context) {
 }
 ```
 
-**结果：**此方式无法判断 `WiFi` 与 `GPRS` 同开。
+**结果：** 此方式无法判断 `WiFi` 与 `GPRS` 同开。
 
 在 `WiFi` 和 `GPRS` 同时打开时系统默认使用 `WiFi` 网络，即`networkInfo.getType()` 的返回值是 `TYPE_WIFI`，所以`isMobileEnable()`的结果一定是`false`导致判断失败。
 
@@ -67,7 +67,7 @@ public static boolean isAllEnable(Context context) {
 
 观察 `ConnectivityManager` 源码发现有这么一个函数：
 
-![ConnectivityManager #getMobileDataEnabled().png](http://upload-images.jianshu.io/upload_images/1837368-babc420cfe7f0a25.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![ConnectivityManager #getMobileDataEnabled()](https://upload-images.jianshu.io/upload_images/1837368-babc420cfe7f0a25.png?imageMogr2/auto-orient/strip|imageView2/2/w/640/format/webp)
 
 尝试使用反射调用该函数判断 `WiFi` 开启时 `GPRS` 的状态发现是可行的。
 

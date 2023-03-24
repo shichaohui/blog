@@ -11,7 +11,7 @@ categories:
 
 ## 效果预览
 
-![绘制饼图](https://img-blog.csdnimg.cn/img_convert/2cb1c452de55c74a008643eb80bb0b31.gif)
+![绘制饼图](https://img-blog.csdn.net/20160118091054388)
 
 嗯，一个很简单的饼图绘制。
 

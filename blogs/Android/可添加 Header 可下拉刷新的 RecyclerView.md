@@ -15,7 +15,7 @@ categories:
 
 效果图
 
-![效果图](https://img-blog.csdnimg.cn/img_convert/b6f1298fe11bf4c7f53bb573b4d094a9.gif)
+![效果图](https://img-blog.csdn.net/20160128223854806)
 
 ## 用法
 

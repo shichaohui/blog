@@ -12,7 +12,7 @@ categories:
 
 ## 预期效果
 
-![image.png](http://upload-images.jianshu.io/upload_images/1837368-486db906ab0b35f1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![预期效果](https://upload-images.jianshu.io/upload_images/1837368-486db906ab0b35f1.png?imageMogr2/auto-orient/strip|imageView2/2/w/301/format/webp)
 
 ## 编辑 drawable 资源
 

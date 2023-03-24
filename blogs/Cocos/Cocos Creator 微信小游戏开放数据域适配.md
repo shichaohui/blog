@@ -18,7 +18,7 @@ categories:
 
 [Creator 接入微信小游戏的开放数据域](https://docs.cocos.com/creator/manual/zh/publish/publish-wechatgame-sub-domain.html)
 
-> **备注：**开放数据域简称为子域，常规游戏内容为主域
+> **备注：** 开放数据域简称为子域，常规游戏内容为主域
 
 ## 适配步骤
 

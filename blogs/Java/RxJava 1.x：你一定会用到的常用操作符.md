@@ -32,11 +32,11 @@ categories:
 
 转换集合为一个每次发射集合中一个元素的 [Observable] 对象。
 
-**使用场景：**对集合（数组、List 等）进行遍历。
+**使用场景：** 对集合（数组、List 等）进行遍历。
 
-![form()](https://raw.github.com/wiki/ReactiveX/RxJava/images/rx-operators/from.png)
+![from()](https://reactivex.io/documentation/operators/images/from.png)
 
-**其他 form() API：**
+**其他 from() API：**
 
 * [public static &lt;T&gt; Observable&lt;T&gt; from(Future&lt;? extends T&gt; future);](http://reactivex.io/RxJava/javadoc/rx/Observable.html#from(java.util.concurrent.Future))
 
@@ -81,11 +81,11 @@ Observable<String> observable = Observable.from(futureTask);
 
 转换一个或多个 Object 为依次发射这些 Object 的 [Observable] 对象。
 
-**使用场景：**转换一个或多个普通 Object 为 [Observable] 对象，如转换数据库查询结果、网络查询结果等。
+**使用场景：** 转换一个或多个普通 Object 为 [Observable] 对象，如转换数据库查询结果、网络查询结果等。
 
-![just()](https://raw.github.com/wiki/ReactiveX/RxJava/images/rx-operators/just.m.png)
+![just()](https://reactivex.io/documentation/operators/images/just.png)
 
-** 其他 just() API：**
+**其他 just() API：**
 
 * [public static &lt;T&gt; Observable&lt;T&gt; just(T t1, T t2);](http://reactivex.io/RxJava/javadoc/rx/Observable.html#just(T,%20T))
 
@@ -126,9 +126,9 @@ Observable<String> observable = Observable.from(stringArrs);
 
 返回一个在被 OnSubscribe 订阅时执行特定方法的 [Observable] 对象。
 
-**使用场景：**不推荐使用，可使用其他操作符替代，如使用 `from()`操作符完成遍历。
+**使用场景：** 不推荐使用，可使用其他操作符替代，如使用 `from()`操作符完成遍历。
 
-** 其他 create() API：**
+**其他 create() API：**
 
 * [@Beta public static &lt;S, T&gt; Observable&lt;T&gt; create(SyncOnSubscribe&lt;S, T&gt; syncOnSubscribe);](http://reactivex.io/RxJava/javadoc/rx/Observable.html#create(rx.observables.SyncOnSubscribe))
 
@@ -148,7 +148,7 @@ Observable.OnSubscribe<String> onSubscribe = new Observable.OnSubscribe< String
 Observable<Object> observable = Observable.create(onSubscribe);
 ```
 
-此方法不常用，大多数时候都是使用 `just()`、`form()` 等方法，如上面那串代码就可以写成：
+此方法不常用，大多数时候都是使用 `just()`、`from()` 等方法，如上面那串代码就可以写成：
 
 ```java
 Observable<Object> observable = Observable.just("hello");
@@ -160,11 +160,11 @@ Observable<Object> observable = Observable.just("hello");
 
 返回一个每隔指定的时间间隔就发射一个序列号的 [Observable] 对象。
 
-**使用场景：**可使用该操作符完成定时、倒计时等功能。
+**使用场景：** 可使用该操作符完成定时、倒计时等功能。
 
-![interval()](https://raw.github.com/wiki/ReactiveX/RxJava/images/rx-operators/interval.png)
+![interval()](https://reactivex.io/documentation/operators/images/interval.png)
 
-** 其他 interval() API：**
+**其他 interval() API：**
 
 * [public static Observable&lt;Long&gt; interval(long interval, TimeUnit unit, Scheduler scheduler);](http://reactivex.io/RxJava/javadoc/rx/Observable.html#interval(long,%20java.util.concurrent.TimeUnit,%20rx.Scheduler))
 
@@ -185,9 +185,9 @@ Observable<Long> observable = Observable.interval(1, TimeUnit.SECONDS);
 
 创建一个在指定延迟时间后发射一条数据（固定值：0）的 [Observable] 对象。
 
-**使用场景：**可用来完成定时功能。
+**使用场景：** 可用来完成定时功能。
 
-![timer()](https://raw.github.com/wiki/ReactiveX/RxJava/images/rx-operators/timer.png)
+![timer()](https://reactivex.io/documentation/operators/images/timer.png)
 
 **其他 timer() API：**
 
@@ -206,11 +206,11 @@ Observable<Long> observable = Observable.timer(3, TimeUnit.SECONDS);
 
 创建一个发射指定范围内的连续整数的 [Observable] 对象。
 
-**使用场景：**可使用该操作符完成一个 `fori` 的循环，如 `for(int i=5;i<=7;i++)` --> `Observable.range(5, 3)`。
+**使用场景：** 可使用该操作符完成一个 `fori` 的循环，如 `for(int i=5;i<=7;i++)` --> `Observable.range(5, 3)`。
 
-![range()](https://raw.github.com/wiki/ReactiveX/RxJava/images/rx-operators/range.png)
+![range()](https://reactivex.io/documentation/operators/images/range.png)
 
-** 其他 range() API：**
+**其他 range() API：**
 
 * [public static Observable&lt;Integer&gt; range(int start, int count, Scheduler scheduler);](http://reactivex.io/RxJava/javadoc/rx/Observable.html#range(int,%20int,%20rx.Scheduler))
 
@@ -227,7 +227,7 @@ Observable<Integer> observable = Observable.range(5, 3);
 
 创建一个不发射任何数据就发出 `onCompleted()` 通知的 [Observable] 对象。
 
-![empty()](https://raw.github.com/wiki/ReactiveX/RxJava/images/rx-operators/empty.png)
+![empty()](https://reactivex.io/documentation/operators/images/empty.png)
 
 **举例：**
 
@@ -242,9 +242,9 @@ Observable<Object> observable = Observable.empty();
 
 创建不发射任何数据就发出 `onError` 通知的 [Observable] 对象。
 
-**使用场景：**程序中捕获异常后，可使用该操作符把捕获的异常传递到后面的逻辑中处理。
+**使用场景：** 程序中捕获异常后，可使用该操作符把捕获的异常传递到后面的逻辑中处理。
 
-![error()](https://raw.github.com/wiki/ReactiveX/RxJava/images/rx-operators/error.png)
+![error()](https://reactivex.io/documentation/operators/images/error.png)
 
 **举例：**
 
@@ -259,7 +259,7 @@ Observable<Object> observable = Observable.error(new Throwable("message"));
 
 创建一个不发射任何数据和通知的 [Observable] 对象。
 
-![never()](https://raw.github.com/wiki/ReactiveX/RxJava/images/rx-operators/never.png)
+![never()](https://reactivex.io/documentation/operators/images/never.png)
 
 **举例：**
 
@@ -273,9 +273,9 @@ Observable<Object> observable = Observable.never();
 
 在订阅的时候才会创建 Observable 对象；每一次订阅都创建一个新的 [Observable] 对象。
 
-**使用场景：**可以使用该操作符封装需要被多次执行的函数。
+**使用场景：** 可以使用该操作符封装需要被多次执行的函数。
 
-![defer()](https://raw.github.com/wiki/ReactiveX/RxJava/images/rx-operators/defer.png)
+![defer()](https://reactivex.io/documentation/operators/images/defer.png)
 
 **举例：**
 
@@ -297,9 +297,9 @@ Observable<String> observable = Observable.defer(new Func0<Observable<String>>()
 
 使Observable 对象在发出 `onNext()` 通知之后重复发射数据。重做结束才会发出 `onComplete()` 通知，若重做过程中出现异常则会中断并发出 `onError()` 通知。
 
-**使用场景：**可使用该操作符指定一次任务执行完成后立即重复执行上一次的任务，如发送多次网络请求等。
+**使用场景：** 可使用该操作符指定一次任务执行完成后立即重复执行上一次的任务，如发送多次网络请求等。
 
-![repeat()](https://raw.github.com/wiki/ReactiveX/RxJava/images/rx-operators/repeat.o.png)
+![repeat()](https://reactivex.io/documentation/operators/images/repeat.png)
 
 **其他 repeat() API：**
 
@@ -326,9 +326,9 @@ observable.repeat(5);
 
 使Observable 对象在发出 `onNext()` 通知之后有条件的重复发射数据。重做结束才会发出 `onCompleted()` 通知，若重做过程中出现异常则会中断并发出 `onError()` 通知。
 
-**使用场景：**可使用该操作符指定满足一定条件时重复执行一个任务，如发送多次网络请求等。
+**使用场景：** 可使用该操作符指定满足一定条件时重复执行一个任务，如发送多次网络请求等。
 
-![repeatWhen()](https://raw.github.com/wiki/ReactiveX/RxJava/images/rx-operators/repeatWhen.f.png)
+![repeatWhen()](https://reactivex.io/documentation/operators/images/repeat.png)
 
 **其他 repeatWhen() API：**
 
@@ -360,9 +360,9 @@ observable.repeatWhen(new Func1<Observable<? extends Void>, Observable<?>>() {
 
 在执行 [Observable]对象的序列出现异常时，不直接发出 `onError()` 通知，而是重新订阅该 [Observable]对象，直到重做过程中未出现异常，则会发出 `onNext()` 和 `onCompleted()` 通知；若重做过程中也出现异常，则会继续重试，直到达到重试次数上限，超出次数后发出最新的 `onError()` 通知。
 
-**使用场景：**网络等请求异常出错后，可重新发起请求。
+**使用场景：** 网络等请求异常出错后，可重新发起请求。
 
-![retry()](https://raw.github.com/wiki/ReactiveX/RxJava/images/rx-operators/retry.png)
+![retry()](https://reactivex.io/documentation/operators/images/retry.png)
 
 **其他 retry() API：**
 
@@ -405,9 +405,9 @@ observable.retry(new Func2<Integer, Throwable, Boolean>() {
 
 有条件的执行重试。
 
-**使用场景：**网络等请求异常出错后，若满足一定条件，则重新发起请求。
+**使用场景：** 网络等请求异常出错后，若满足一定条件，则重新发起请求。
 
-![retryWhen()](https://raw.github.com/wiki/ReactiveX/RxJava/images/rx-operators/retryWhen.f.png)
+![retryWhen()](https://reactivex.io/documentation/operators/images/retry.png)
 
 **其他 retryWhen() API：**
 * [public final Observable&lt;T&gt; retryWhen(final Func1&lt;? super Observable&lt;? extends Throwable&gt;, ? extends Observable&lt;?&gt;&gt;notificationHandler, Scheduler scheduler);](http://reactivex.io/RxJava/javadoc/rx/Observable.html#retryWhen(rx.functions.Func1,%20rx.Scheduler))
@@ -443,9 +443,9 @@ observable.retryWhen(new Func1<Observable<? extends Throwable>, Observable<?>>()
 
 把源 [Observable] 发射的元素应用于指定的函数，并发送该函数的结果。
 
-**使用场景：**将从网络获取的数据（NetData 对象）转换为数据库相关对象（DBData对象）并使用 [Observable] 发送。
+**使用场景：** 将从网络获取的数据（NetData 对象）转换为数据库相关对象（DBData对象）并使用 [Observable] 发送。
 
-![map()](https://raw.github.com/wiki/ReactiveX/RxJava/images/rx-operators/map.png)
+![map()](https://reactivex.io/documentation/operators/images/map.png)
 
 **举例：**
 
@@ -466,9 +466,9 @@ Observable.just(2)
 
 转换源 [Observable] 对象为另一个 [Observable] 对象。
 
-**使用场景：**从网络获取数据并使用 obsA 对象发射，flatMap() 操作符中可将数据存进数据库并返回一个新的对象 obsB。
+**使用场景：** 从网络获取数据并使用 obsA 对象发射，flatMap() 操作符中可将数据存进数据库并返回一个新的对象 obsB。
 
-![flatMap()](https://raw.github.com/wiki/ReactiveX/RxJava/images/rx-operators/flatMap.png)
+![flatMap()](https://reactivex.io/documentation/operators/images/flatMap.png)
 
 **其他 flatMap() API：**
 
@@ -493,7 +493,6 @@ Observable.just(2)
                 return Observable.timer(integer, TimeUnit.SECONDS);
             }
         });
-
 ```
 
 ## 5 过滤
@@ -504,9 +503,9 @@ Observable.just(2)
 
 只发射满足指定谓词的元素。
 
-**使用场景：**可使用 filter 代替 if 语句。
+**使用场景：** 可使用 filter 代替 if 语句。
 
-![filter()](https://raw.github.com/wiki/ReactiveX/RxJava/images/rx-operators/filter.png)
+![filter()](https://reactivex.io/documentation/operators/images/filter.png)
 
 **举例：**
 
@@ -518,7 +517,6 @@ Observable.just(-1, -2, 0, 1, 2)
                 return integer > 0;
             }
         });
-
 ```
 
 ### 5.2 first()
@@ -529,7 +527,7 @@ Observable.just(-1, -2, 0, 1, 2)
 
 **使用场景：** 顺序发出多条数据，只接收第一条。
 
-![first()](https://raw.github.com/wiki/ReactiveX/RxJava/images/rx-operators/first.png)
+![first()](https://reactivex.io/documentation/operators/images/first.png)
 
 **其他 first() API：**
 
@@ -562,7 +560,7 @@ Observable.empty().first();
 
 **使用场景：** 顺序发出多条数据，只接收最后一条。
 
-![last()](https://raw.github.com/wiki/ReactiveX/RxJava/images/rx-operators/last.png)
+![last()](https://reactivex.io/documentation/operators/images/last.png)
 
 **其他 last() API：**
 
@@ -594,7 +592,7 @@ Observable.empty().last();
 
 跳过前面指定数量或指定时间内的元素，只发射后面的元素。
 
-![skip()](https://raw.github.com/wiki/ReactiveX/RxJava/images/rx-operators/skip.png)
+![skip()](https://reactivex.io/documentation/operators/images/skip.png)
 
 **其他 skip() API：**
 
@@ -615,7 +613,7 @@ Observable.just(-1, -2, 0, 1, 2)
 
 跳过前面指定数量或指定时间内的元素，只发射后面的元素。指定时间时会延迟源 [Observable] 发射的任何数据。
 
-![skipLast()](https://raw.github.com/wiki/ReactiveX/RxJava/images/rx-operators/skipLast.png)
+![skipLast()](https://reactivex.io/documentation/operators/images/skipLast.png)
 
 **其他 skipLast() API：**
 
@@ -636,7 +634,7 @@ Observable.just(-1, -2, 0, 1, 2)
 
 只发射前面指定数量或指定时间内的元素。
 
-![take()](https://raw.github.com/wiki/ReactiveX/RxJava/images/rx-operators/take.png)
+![take()](https://reactivex.io/documentation/operators/images/take.png)
 
 **其他 take() API：**
 
@@ -656,7 +654,7 @@ Observable.just(-1, -2, 0, 1, 2).take(3); // 只发射前三条数据
 
 只发射后面指定数量或指定时间内的元素。指定时间时会延迟源 [Observable] 发射的任何数据。
 
-![takeLast()](https://raw.github.com/wiki/ReactiveX/RxJava/images/rx-operators/takeLast.n.png)
+![takeLast()](https://reactivex.io/documentation/operators/images/take.png)
 
 **其他 takeLast() API：**
 
@@ -680,7 +678,7 @@ Observable.just(-1, -2, 0, 1, 2).takeLast(3); // 只发射后三条数据
 
 定期发射 [Observable] 发射的最后一条数据。
 
-![sample()](https://raw.github.com/wiki/ReactiveX/RxJava/images/rx-operators/sample.emitlast.1x.png)
+![sample()](https://reactivex.io/documentation/operators/images/sample.png)
 
 **其他 sample() API：**
 
@@ -703,7 +701,7 @@ Observable.interval(300, TimeUnit.MILLISECONDS)
 只发射指定索引的元素。
 **使用场景：** 按索引去集合中的元素等。
 
-![elementAt()](https://raw.github.com/wiki/ReactiveX/RxJava/images/rx-operators/elementAt.png)
+![elementAt()](https://reactivex.io/documentation/operators/images/elementAt.png)
 
 **举例：**
 
@@ -717,7 +715,7 @@ Observable.just(-1, -2, 0, 1, 2).elementAt(2); // 发射索引为 2 的数据
 
 只发射指定索引的元素，若该索引对应的元素不存在，则发射默认值。
 
-![elementAtOrDefault()](https://raw.github.com/wiki/ReactiveX/RxJava/images/rx-operators/elementAtOrDefault.png)
+![elementAtOrDefault()](https://reactivex.io/documentation/operators/images/elementAtOrDefault.png)
 
 **举例：**
 
@@ -731,7 +729,7 @@ Observable.just(-1, -2, 0, 1, 2).elementAtOrDefault(9, -5); // 发射索引为 9
 
 不发射任何数据，直接发出 `onCompleted()` 通知。
 
-![ignoreElements()](https://raw.github.com/wiki/ReactiveX/RxJava/images/rx-operators/ignoreElements.png)
+![ignoreElements()](https://reactivex.io/documentation/operators/images/ignoreElements.png)
 
 **举例：**
 
@@ -745,7 +743,7 @@ Observable.just(-1, -2, 0, 1, 2).ignoreElements()
 
 过滤重复的元素，过滤规则是：只允许还没有发射过的元素通过。
 
-![distinct()](https://raw.github.com/wiki/ReactiveX/RxJava/images/rx-operators/distinct.png)
+![distinct()](https://reactivex.io/documentation/operators/images/distinct.png)
 
 **其他 distinct() API：**
 
@@ -774,7 +772,7 @@ Observable.just(-1, -2, 0, 1, 2, 1).distinct(new Func1<Integer, Integer>() {
 
 源 [Observable] 每产生结果后，如果在规定的间隔时间内没有产生新的结果，则发射这个结果，否则会忽略这个结果。该操作符会过滤掉发射速率过快的数据项。
 
-![debounce()](https://raw.github.com/wiki/ReactiveX/RxJava/images/rx-operators/debounce.png)
+![debounce()](https://reactivex.io/documentation/operators/images/debounce.png)
 
 **其他 debounce() API：**
 

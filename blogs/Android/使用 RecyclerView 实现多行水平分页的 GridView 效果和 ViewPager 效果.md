@@ -19,9 +19,9 @@ Demo 已上传到[GitHub](https://github.com/shichaohui/PageRecyelerViewDemo)，
 
 （由于这里每个Item都很相像，所以效果看起来不是很好，请见谅）
 
-**图1：**![多行水平分页的GridView效果](https://img-blog.csdnimg.cn/img_convert/28d8fd2073a26effcd13508e781287cb.gif)
+**图1：**![多行水平分页的GridView效果](https://img-blog.csdn.net/20150714202531487)
 
-**图2：**![ViewPager效果](https://img-blog.csdnimg.cn/img_convert/3e41a1ebd64c3d8d3815eba6225b8c81.gif)
+**图2：**![ViewPager效果](https://img-blog.csdn.net/20150714202619471)
 
 (删除的操作是在长按事件中写的)
 
@@ -33,7 +33,7 @@ Demo 已上传到[GitHub](https://github.com/shichaohui/PageRecyelerViewDemo)，
 
 ### 代码结构：
 
-![代码结构](https://img-blog.csdnimg.cn/img_convert/81943893f9bd1bd11dc47394ec29f1db.png)
+![代码结构](https://img-blog.csdn.net/20150713091647129)
 
 * `AutoGridLayoutManager` 继承自 `GridLayoutManager` 并重写了`onMeasure`方法，目的是使 `RecyclerView` 的高度自适应内容高度。
 * `DimensionConvert` 是一个用来转换 px 和 pd 的工具类。

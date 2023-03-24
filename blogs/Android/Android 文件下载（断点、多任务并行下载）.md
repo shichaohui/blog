@@ -18,7 +18,7 @@ demo 已上传到 Github：https://github.com/shichaohui/FileDownloadDemo.git �
 
 **效果图：**
 
-![效果图](https://img-blog.csdnimg.cn/img_convert/7c43a3307fd02e7734131538d7b28987.png)
+![效果图](https://img-blog.csdn.net/20150608151848252)
 
 ## 主要代码
 

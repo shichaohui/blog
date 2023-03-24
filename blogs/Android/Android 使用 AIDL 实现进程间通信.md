@@ -18,7 +18,7 @@ categories:
 
 右键点击程序包 --> `new` --> `AIDL` --> `AIDL File` 创建 `IMyAidlInterface.aidl` 文件，这时` Android Studio` 会自动创建一个和 `java` 同级的目录 `aidl`，并在此目录下生成包和 `.aidl` 文件。如图：
 
-![.aidl文件所在目录结构](https://img-blog.csdnimg.cn/img_convert/2ccc3345299eb0fa87d62777e3a002d0.png)
+![.aidl文件所在目录结构](https://img-blog.csdn.net/20151104165753855)
 
 现在定义一个求和的方法，修改后的 `IMyAidlInterface` 文件如下：
 
@@ -36,7 +36,7 @@ interface IMyAidlInterface {
 
 通过 Build --> Rebuild Project 重新构建项目生成.aidl文件对应的.java文件，如图所示：
 
-![对应的.java文件所在目录结构](https://img-blog.csdnimg.cn/img_convert/7ca148e6c95ba037a144a466b95de00b.png)
+![对应的.java文件所在目录结构](https://img-blog.csdn.net/20151104165817139)
 
 ## 3. 创建共享Service
 
