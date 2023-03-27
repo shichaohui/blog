@@ -1,0 +1,4 @@
+.page-catalog-container {
+  width: 16rem !important;
+  border-left: 1px dashed rgb(234 236 239 / var(--tw-border-opacity));
+}

@@ -10,10 +10,14 @@
     <p class="shields-row" v-for="list in shieldsList" :key="list">
       <img class="shields-item" v-for="item in list" :key="item" :src="item" />
     </p>
+    <xicons v-if="showScrollTips" class="scroll-tips" icon="ThisSideUp" />
+    <div id="all" />
   </div>
 </template>
 
 <script setup lang="ts">
+import { onMounted, onUnmounted, ref } from "vue";
+
 const shieldsList = [
   [
     "https://img.shields.io/badge/Web-%23323330.svg?&style=for-the-badge&logo=data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNjQzMjY2ODY0MzA0IiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjI5MDIiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCI+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48L3N0eWxlPjwvZGVmcz48cGF0aCBkPSJNODI0Ljg4ODg4OSA2MzAuOTkyNTkzbC0xMjIuMDI2NjY3LTUwLjM0NjY2N2EyOC40NDQ0NDQgMjguNDQ0NDQ0IDAgMSAwLTIxLjE0MzcwMyA1My41NzAzN2w2MC4xMTI1OTIgMjQuMzY3NDA4LTYwLjExMjU5MiAyNy41OTExMTFhMjguNDQ0NDQ0IDI4LjQ0NDQ0NCAwIDAgMC0xNC42MDE0ODIgMzcuMzU3MDM3QTI4LjkxODUxOSAyOC45MTg1MTkgMCAwIDAgNjkzLjA5NjI5NiA3MzkuNTU1NTU2YTE1LjQ1NDgxNSAxNS40NTQ4MTUgMCAwIDAgMTEuMzc3Nzc4LTMuMjIzNzA0bDEyMC40MTQ4MTUtNTQuOTkyNTkzYTI4LjkxODUxOSAyOC45MTg1MTkgMCAwIDAgMTYuMjEzMzMzLTI1Ljk3OTI1OUEyNS42OTQ4MTUgMjUuNjk0ODE1IDAgMCAwIDgyNC44ODg4ODkgNjMwLjk5MjU5M3pNNTQ4LjU5ODUxOSA1MTcuMzA5NjNhMjguNDQ0NDQ0IDI4LjQ0NDQ0NCAwIDAgMC0zNS43NDUxODYgMTcuODI1MTg1bC02MS42Mjk2MjkgMTg4LjM5NzAzN2EyOC40NDQ0NDQgMjguNDQ0NDQ0IDAgMCAwIDE3LjgyNTE4NSAzNS43NDUxODUgMTcuNTQwNzQxIDE3LjU0MDc0MSAwIDAgMCA4LjE1NDA3NCAxLjYxMTg1MiAzMS42NjgxNDggMzEuNjY4MTQ4IDAgMCAwIDI3LjU5MTExMS0xOS41MzE4NTJsNjEuNzI0NDQ1LTE4OC4zMDIyMjJhMjguNDQ0NDQ0IDI4LjQ0NDQ0NCAwIDAgMC0xNy45Mi0zNS43NDUxODV6TTM1OC42ODQ0NDQgNTk3LjMzMzMzM2EzMC4xNTExMTEgMzAuMTUxMTExIDAgMCAwLTM3LjM1NzAzNy0xNi4yMTMzMzNMMTk5LjExMTExMSA2MzAuOTkyNTkzYTMwLjQzNTU1NiAzMC40MzU1NTYgMCAwIDAtMTcuODI1MTg1IDI1Ljk3OTI1OUEyOC40NDQ0NDQgMjguNDQ0NDQ0IDAgMCAwIDE5Ny45NzMzMzMgNjgyLjY2NjY2N2wxMjAuMTMwMzcxIDU1LjE4MjIyMmEzMC4wNTYyOTYgMzAuMDU2Mjk2IDAgMCAwIDExLjM3Nzc3NyAzLjIyMzcwNCAyOC45MTg1MTkgMjguOTE4NTE5IDAgMCAwIDI1Ljk3OTI2LTE2LjIxMzMzNCAyOC40NDQ0NDQgMjguNDQ0NDQ0IDAgMCAwLTE0LjYwMTQ4Mi0zNy4zNTcwMzdsLTYwLjExMjU5Mi0yNy41OTExMTEgNjAuMTEyNTkyLTI0LjM2NzQwN2MxNi4yMTMzMzMtNy43NzQ4MTUgMjQuMzY3NDA3LTI0LjA4Mjk2MyAxNy44MjUxODUtMzguMjEwMzcxeiIgZmlsbD0iIzAwOTdGRiIgcC1pZD0iMjkwMyI+PC9wYXRoPjxwYXRoIGQ9Ik04NTMuMzMzMzMzIDE3MC42NjY2NjdhNTYuODg4ODg5IDU2Ljg4ODg4OSAwIDAgMSA1Ni44ODg4ODkgNTYuODg4ODg5djU2OC44ODg4ODhhNTYuODg4ODg5IDU2Ljg4ODg4OSAwIDAgMS01Ni44ODg4ODkgNTYuODg4ODg5SDE3MC42NjY2NjdhNTYuODg4ODg5IDU2Ljg4ODg4OSAwIDAgMS01Ni44ODg4ODktNTYuODg4ODg5VjIyNy41NTU1NTZhNTYuODg4ODg5IDU2Ljg4ODg4OSAwIDAgMSA1Ni44ODg4ODktNTYuODg4ODg5aDY4Mi42NjY2NjZtMC01Ni44ODg4ODlIMTcwLjY2NjY2N0ExMTMuNzc3Nzc4IDExMy43Nzc3NzggMCAwIDAgNTYuODg4ODg5IDIyNy41NTU1NTZ2NTY4Ljg4ODg4OGExMTMuNzc3Nzc4IDExMy43Nzc3NzggMCAwIDAgMTEzLjc3Nzc3OCAxMTMuNzc3Nzc4aDY4Mi42NjY2NjZhMTEzLjc3Nzc3OCAxMTMuNzc3Nzc4IDAgMCAwIDExMy43Nzc3NzgtMTEzLjc3Nzc3OFYyMjcuNTU1NTU2YTExMy43Nzc3NzggMTEzLjc3Nzc3OCAwIDAgMC0xMTMuNzc3Nzc4LTExMy43Nzc3Nzh6IiBmaWxsPSIjMDA5N0ZGIiBwLWlkPSIyOTA0Ij48L3BhdGg+PHBhdGggZD0iTTk2Ny4xMTExMTEgMzY1LjMyMTQ4MUg1Ni44ODg4ODl2NTYuODg4ODg5aDkxMC4yMjIyMjJ2LTU2Ljg4ODg4OXoiIGZpbGw9IiMwMDk3RkYiIHAtaWQ9IjI5MDUiPjwvcGF0aD48cGF0aCBkPSJNMjI0Ljk5NTU1NiAyNzMuNTQwNzQxbS00Mi42NjY2NjcgMGE0Mi42NjY2NjcgNDIuNjY2NjY3IDAgMSAwIDg1LjMzMzMzMyAwIDQyLjY2NjY2NyA0Mi42NjY2NjcgMCAxIDAtODUuMzMzMzMzIDBaIiBmaWxsPSIjMDA5N0ZGIiBwLWlkPSIyOTA2Ij48L3BhdGg+PHBhdGggZD0iTTM1Ny40NTE4NTIgMjczLjU0MDc0MW0tNDIuNjY2NjY3IDBhNDIuNjY2NjY3IDQyLjY2NjY2NyAwIDEgMCA4NS4zMzMzMzQgMCA0Mi42NjY2NjcgNDIuNjY2NjY3IDAgMSAwLTg1LjMzMzMzNCAwWiIgZmlsbD0iIzAwOTdGRiIgcC1pZD0iMjkwNyI+PC9wYXRoPjxwYXRoIGQ9Ik00ODkuOTA4MTQ4IDI3My41NDA3NDFtLTQyLjY2NjY2NyAwYTQyLjY2NjY2NyA0Mi42NjY2NjcgMCAxIDAgODUuMzMzMzM0IDAgNDIuNjY2NjY3IDQyLjY2NjY2NyAwIDEgMC04NS4zMzMzMzQgMFoiIGZpbGw9IiMwMDk3RkYiIHAtaWQ9IjI5MDgiPjwvcGF0aD48L3N2Zz4=",
@@ -41,10 +45,27 @@ const shieldsList = [
     "https://img.shields.io/badge/python-%23323330.svg?&style=for-the-badge&logo=python&logoColor=%233776AB",
   ],
 ];
+
+const showScrollTips = ref(true);
+
+function catchScroll() {
+  showScrollTips.value = window.scrollY < 20;
+}
+
+onMounted(() => {
+  console.log("onMounted");
+  window.addEventListener("scroll", catchScroll);
+});
+
+onUnmounted(() => {
+  console.log("onUnmounted");
+  window.removeEventListener("scroll", catchScroll);
+});
 </script>
 
 <style lang="scss" scoped>
 .shields-comp {
+  position: relative;
   background: url(/blog/bg.svg) center center / cover no-repeat;
   width: 100vw;
   height: 100vh;
@@ -72,6 +93,30 @@ const shieldsList = [
   .shields-item {
     display: inline-block;
     margin: 10px 10px 0 0;
+  }
+
+  .scroll-tips {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    animation: scroll-tips 2s infinite;
+  }
+
+  @keyframes scroll-tips {
+    from {
+      bottom: -20px;
+      opacity: 0.5;
+    }
+    to {
+      bottom: 30px;
+      opacity: 0;
+    }
+  }
+
+  #all {
+    position: absolute;
+    bottom: 50px;
   }
 }
 </style>

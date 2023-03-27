@@ -3,37 +3,33 @@
  */
 const navbar = [
   {
+    text: "全部",
+    link: "/#all",
+  },
+  {
     text: "分类",
-    children: [
-      {
-        text: "前端",
-        link: "/categories/FrontEnd/1/",
-      },
-      {
-        text: "Android",
-        link: "/categories/Android/1/",
-      },
-      {
-        text: "Flutter",
-        link: "/categories/Flutter/1/",
-      },
-      {
-        text: "Java",
-        link: "/categories/Java/1/",
-      },
-      {
-        text: "Python",
-        link: "/categories/Python/1/",
-      },
-      {
-        text: "更多",
-        link: "/categories/Cocos/1/",
-      },
-    ],
+    link: "/categories/FrontEnd/1/",
   },
   {
     text: "标签",
     link: "/tags/FrontEnd/1/",
+  },
+  {
+    text: "博客平台",
+    children: [
+      {
+        text: "掘金",
+        link: "https://juejin.cn/user/4441682704866759/posts",
+      },
+      {
+        text: "简书",
+        link: "https://www.jianshu.com/u/2cbd13c2ceb8",
+      },
+      {
+        text: "CSDN",
+        link: "https://blog.csdn.net/u014165119",
+      },
+    ],
   },
   {
     text: "个人主页",
