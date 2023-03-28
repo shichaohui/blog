@@ -9,6 +9,8 @@ categories:
  - Android
 ---
 
+> 转载请注明出处，[点击此处](https://shichaohui.github.io/)可了解 [StoneHui](https://shichaohui.github.io/) 更多信息
+
 QQ 空间相信大家都用过，是否觉得它的下拉刷新很酷呢？今天就来自己实现这个控件。
 
 本文主要是讲思想和一些 api，想要使用此效果到项目中的同学请点击这里 [带动画的下拉刷新RecyclerView](http://blog.csdn.net/u014165119/article/details/47321943)

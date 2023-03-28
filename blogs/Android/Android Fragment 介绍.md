@@ -8,6 +8,8 @@ categories:
  - Android
 ---
 
+> 转载请注明出处，[点击此处](https://shichaohui.github.io/)可了解 [StoneHui](https://shichaohui.github.io/) 更多信息
+
 ## Fragment 简介
 
 `Fragment` 为大量不同型号、尺寸、分辨率的设备提供了一种统一的UI优化方案。

@@ -9,6 +9,8 @@ categories:
  - Java
 ---
 
+> 转载请注明出处，[点击此处](https://shichaohui.github.io/)可了解 [StoneHui](https://shichaohui.github.io/) 更多信息
+
 [Retrofit2.0 项目主页](https://github.com/square/retrofit)
 
 [Retrofit2.0 官方文档](http://square.github.io/retrofit/)

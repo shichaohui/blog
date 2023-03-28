@@ -9,6 +9,8 @@ categories:
  - Android
 ---
 
+> 转载请注明出处，[点击此处](https://shichaohui.github.io/)可了解 [StoneHui](https://shichaohui.github.io/) 更多信息
+
 ```java
 // bitmap转drawable
 Drawable drawable = new BitmapDrawable(context.getResources(), bitmap);

@@ -9,6 +9,8 @@ categories:
  - Android
 ---
 
+> 转载请注明出处，[点击此处](https://shichaohui.github.io/)可了解 [StoneHui](https://shichaohui.github.io/) 更多信息
+
 下拉刷新的 `RecyclerView`，兼有上拉加载更多、添加头部、定制脚部功能，下拉刷新使用 `SwipeRefreshLayout`。
 
 [代码在这](https://github.com/shichaohui/RefreshRecyclerView)

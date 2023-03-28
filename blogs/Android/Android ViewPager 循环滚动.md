@@ -8,6 +8,8 @@ categories:
  - Android
 ---
 
+> 转载请注明出处，[点击此处](https://shichaohui.github.io/)可了解 [StoneHui](https://shichaohui.github.io/) 更多信息
+
 这个功能其实很简单，看代码。
 
 先定义一个 `View` 的集合和一个 `View` 里面显示图片的 id 的数组，都用集合也可以。

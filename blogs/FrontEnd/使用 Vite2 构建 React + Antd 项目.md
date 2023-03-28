@@ -10,12 +10,16 @@ categories:
  - FrontEnd
 ---
 
-> [Vite2](https://github.com/vitejs/vite)、[React](https://github.com/facebook/react)、[Antd](https://github.com/ant-design/ant-design)
+> 转载请注明出处，[点击此处](https://shichaohui.github.io/)可了解 [StoneHui](https://shichaohui.github.io/) 更多信息
+
+[Vite]:https://github.com/vitejs/vite
+[React]:https://github.com/facebook/react
+[Antd]:https://github.com/ant-design/ant-design
 
 ## 什么是 Vite？
 
-`Vite`（法语意思是 “快”，发音为 `/vit/`，类似 `veet`）是一种全新的面向未来的前端开发服务器和构建工具。  
-`Vite` 利用浏览器原生 `ES Module` 去解析 `imports`，在服务器端按需编译返回，跳过了打包的概念，服务器随起随用。同时不仅支持 `Vue` 和 `React`，还搞定了热更新，而且热更新的速度不会随着模块增多而变慢。针对生产环境则可以把同一份代码用 `rollup` 打包。
+[Vite]（法语意思是 “快”，发音为 `/vit/`，类似 `veet`）是一种全新的面向未来的前端开发服务器和构建工具。  
+[Vite] 利用浏览器原生 `ES Module` 去解析 `imports`，在服务器端按需编译返回，跳过了打包的概念，服务器随起随用。同时不仅支持 `Vue` 和 [React]，还搞定了热更新，而且热更新的速度不会随着模块增多而变慢。针对生产环境则可以把同一份代码用 `rollup` 打包。
 
 ## 创建项目
 
@@ -34,7 +38,7 @@ yarn create @vitejs/app my-vite-app --template react
 yarn create @vitejs/app my-vite-app --template react-ts
 ```
 
-## 安装 Antd
+## 安装 [Antd]
 
 ### 安装
 

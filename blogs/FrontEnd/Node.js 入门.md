@@ -9,6 +9,8 @@ categories:
  - Node
 ---
 
+> 转载请注明出处，[点击此处](https://shichaohui.github.io/)可了解 [StoneHui](https://shichaohui.github.io/) 更多信息
+
 [Node.js]:http://dev.nodejs.cn/learn
 [console]:http://nodejs.cn/api/console.html
 [npm]:http://dev.nodejs.cn/learn/an-introduction-to-the-npm-package-manager

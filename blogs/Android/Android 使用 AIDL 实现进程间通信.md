@@ -8,6 +8,8 @@ categories:
  - Android
 ---
 
+> 转载请注明出处，[点击此处](https://shichaohui.github.io/)可了解 [StoneHui](https://shichaohui.github.io/) 更多信息
+
 > `AIDL`(Android Interface Definition Language) 是一种 `IDL` 语言，用于生成可以在 `Android` 设备上两个进程之间进行进程间通信（`IPC`）的代码。
 
 *以下的文件创建过程是基于Android Studio。*

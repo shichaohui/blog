@@ -8,7 +8,9 @@ categories:
  - FrontEnd
 ---
 
-> [同源策略 & 跨域](https://blog.csdn.net/u014165119/article/details/1113555193)
+> 转载请注明出处，[点击此处](https://shichaohui.github.io/)可了解 [StoneHui](https://shichaohui.github.io/) 更多信息
+
+前置知识点： [同源策略 & 跨域](https://blog.csdn.net/u014165119/article/details/111355519)
 
 ## 什么是 JSONP？
 

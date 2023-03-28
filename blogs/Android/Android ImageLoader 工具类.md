@@ -8,6 +8,8 @@ categories:
  - Android
 ---
 
+> 转载请注明出处，[点击此处](https://shichaohui.github.io/)可了解 [StoneHui](https://shichaohui.github.io/) 更多信息
+
 [Universal Image Loader 项目主页](https://github.com/nostra13/Android-Universal-Image-Loader)
 
 为了更加方便的使用 `ImageLoader`，整理出来一个工具类 `ImageLoaderHelper.java`。

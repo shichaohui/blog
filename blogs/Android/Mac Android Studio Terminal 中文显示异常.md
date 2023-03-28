@@ -8,6 +8,8 @@ categories:
  - Android
 ---
 
+> 转载请注明出处，[点击此处](https://shichaohui.github.io/)可了解 [StoneHui](https://shichaohui.github.io/) 更多信息
+
 两个月前为了方便编写 `Kotlin` 代码，下载了 `Android Studio 3.0` 预览版，撸代码、Build、安装、一切正常。到了提交代码的时候懵逼了，`Terminal` 中输入中文居然变成了 `Unicode` 编码，就像这样：
 
 ![Terminal 中文异常](https://s1.ax1x.com/2023/03/24/ppBG2qS.png)

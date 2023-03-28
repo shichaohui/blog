@@ -8,6 +8,8 @@ categories:
  - Android
 ---
 
+> 转载请注明出处，[点击此处](https://shichaohui.github.io/)可了解 [StoneHui](https://shichaohui.github.io/) 更多信息
+
 > I/chromium: [INFO:CONSOLE(0)] "Mixed Content: The page at 'https://xxx' was loaded over HTTPS, but requested an insecure image 'http://xxx'. This request has been blocked; the content must be served over HTTPS.", source: https://xxx) (0)
 
 > I/chromium: [INFO:CONSOLE(43)] "Mixed Content: The page at 'https://xxx' was loaded over HTTPS, but requested an insecure XMLHttpRequest endpoint 'http:xxx)'. This request has been blocked; the content must be served over HTTPS.", source: https://xxx.js) (43)

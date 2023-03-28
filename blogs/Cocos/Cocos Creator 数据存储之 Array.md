@@ -9,6 +9,8 @@ categories:
  - Cocos Creator
 ---
 
+> 转载请注明出处，[点击此处](https://shichaohui.github.io/)可了解 [StoneHui](https://shichaohui.github.io/) 更多信息
+
 [Cocos Creator 文档 -- 存储和读取用户数据](https://docs.cocos.com/creator/manual/zh/advanced-topics/data-storage.html)
 
 ## 存取方式

@@ -7,6 +7,8 @@ categories:
  - Flutter
 ---
 
+> 转载请注明出处，[点击此处](https://shichaohui.github.io/)可了解 [StoneHui](https://shichaohui.github.io/) 更多信息
+
 最近在学习 `Flutter`，俗话说的好，纸上得来终觉浅，所以动手撸了一个 [gank.io](https://gank.io) 的 APP，有兴趣的可以 [到 GitHub 看看源码](https://github.com/shichoahui/Gank)。
 
 本文将与大家分享项目中自定义的缩放控件 [GestureZoomBox](https://github.com/shichaohui/gesture_zoom_box) 。

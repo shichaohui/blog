@@ -12,6 +12,8 @@ categories:
  - 微信小游戏
 ---
 
+> 转载请注明出处，[点击此处](https://shichaohui.github.io/)可了解 [StoneHui](https://shichaohui.github.io/) 更多信息
+
 首先祭出官方文档
 
 [微信小游戏开放数据域](https://developers.weixin.qq.com/minigame/dev/tutorial/open-ability/open-data.html#%E5%BC%80%E6%94%BE%E6%95%B0%E6%8D%AE%E5%9F%9F)

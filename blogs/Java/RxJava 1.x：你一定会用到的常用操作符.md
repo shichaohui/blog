@@ -8,6 +8,8 @@ categories:
  - Java
 ---
 
+> 转载请注明出处，[点击此处](https://shichaohui.github.io/)可了解 [StoneHui](https://shichaohui.github.io/) 更多信息
+
 # RxJava 操作符
 
 > 本文基于 `RxJava1.x` 版本，阅读本文前请先了解 [RxJava](https://github.com/ReactiveX/RxJava)  的基本使用。

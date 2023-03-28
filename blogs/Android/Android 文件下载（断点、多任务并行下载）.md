@@ -8,6 +8,8 @@ categories:
  - Android
 ---
 
+> 转载请注明出处，[点击此处](https://shichaohui.github.io/)可了解 [StoneHui](https://shichaohui.github.io/) 更多信息
+
 以下代码是基于百度云网盘：http://pan.baidu.com/s/1dD1Xo8T 中的 demo 进行优化及功能添加。
 
 以下代码实现功能有：多线程下载、多任务并行下载以及下载进度和下载速度的显示等功能。

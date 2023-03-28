@@ -9,6 +9,8 @@ categories:
  - Android
 ---
 
+> 转载请注明出处，[点击此处](https://shichaohui.github.io/)可了解 [StoneHui](https://shichaohui.github.io/) 更多信息
+
 项目地址：https://github.com/shichaohui/AnimRefreshRecyclerView
 
 项目中包含一个demo（普通 `Android` 工程）和 `Android Library`，感兴趣的同学可以自己下载源码和 Demo。

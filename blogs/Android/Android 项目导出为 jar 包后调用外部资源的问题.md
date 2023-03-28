@@ -9,6 +9,8 @@ categories:
  - Android
 ---
 
+> 转载请注明出处，[点击此处](https://shichaohui.github.io/)可了解 [StoneHui](https://shichaohui.github.io/) 更多信息
+
 **将一个项目导出为jar包**
 
 很简单，步骤：右键点击目标项目 --> 选择 `Export...` --> 选择 `Java` --> 选中 `Jar file` --> 点击 `Next` 按钮 --> 将勾选全部去掉只保留 `src` --> 下面有个框框可以选择导出路径 --> `Finish`。

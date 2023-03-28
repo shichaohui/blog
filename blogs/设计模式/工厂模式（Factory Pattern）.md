@@ -8,6 +8,8 @@ categories:
  - 设计模式
 ---
 
+> 转载请注明出处，[点击此处](https://shichaohui.github.io/)可了解 [StoneHui](https://shichaohui.github.io/) 更多信息
+
 ## 模式定义
 
 工厂模式属于创建型模式，它提供了一种创建对象的最佳方式。

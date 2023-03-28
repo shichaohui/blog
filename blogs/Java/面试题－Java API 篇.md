@@ -7,6 +7,8 @@ categories:
  - Java
 ---
 
+> 转载请注明出处，[点击此处](https://shichaohui.github.io/)可了解 [StoneHui](https://shichaohui.github.io/) 更多信息
+
 最近得空，就去一些招聘网站做了些面试题，为方便大家共同学习，`Java API` 相关的就在这篇博客里记录一下，以后有空会持续更新，大家有更好的答案也可以留言告诉我。
 
 [面试题－Java算法篇 传送门](http://blog.csdn.net/u014165119/article/details/49908451)

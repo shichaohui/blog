@@ -8,6 +8,8 @@ categories:
  - Android
 ---
 
+> 转载请注明出处，[点击此处](https://shichaohui.github.io/)可了解 [StoneHui](https://shichaohui.github.io/) 更多信息
+
 使用 `lambda` 可以大大简化代码：
 
 [Java 8 的 lambda 表达式](http://www.oschina.net/question/12_59047)
