@@ -6,7 +6,7 @@ export default function (source: _.Source): _.IDtplConfig {
     templates: [
       {
         name: "template/blog.dtpl",
-        matches: "docs/**/*.md",
+        matches: "blogs/**/*.md",
         localData: {
           blogName: fileName,
           category: dirName,
