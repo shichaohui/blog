@@ -7,7 +7,7 @@ categories:
  - Flutter
 ---
 
-> <small>转载请注明出处，[点击此处](https://shichaohui.github.io/) 查看更多精彩内容。</small>
+> <small>转载请注明出处，[点击此处](https://shichaohui.github.io/) 查看更多精彩内容</small>
 
 最近在学习 `Flutter`，俗话说的好，纸上得来终觉浅，所以动手撸了一个 [gank.io](https://gank.io) 的 APP，有兴趣的可以 [到 GitHub 看看源码](https://github.com/shichoahui/Gank)。
 

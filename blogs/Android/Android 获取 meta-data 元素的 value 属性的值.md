@@ -8,7 +8,7 @@ categories:
  - Android
 ---
 
-> <small>转载请注明出处，[点击此处](https://shichaohui.github.io/) 查看更多精彩内容。</small>
+> <small>转载请注明出处，[点击此处](https://shichaohui.github.io/) 查看更多精彩内容</small>
 
 获取 `<meta-data>` 元素的 `value` 属性的值，有注释不解释。
 

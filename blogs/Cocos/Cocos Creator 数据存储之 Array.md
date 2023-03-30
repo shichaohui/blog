@@ -9,7 +9,7 @@ categories:
  - Cocos Creator
 ---
 
-> <small>转载请注明出处，[点击此处](https://shichaohui.github.io/) 查看更多精彩内容。</small>
+> <small>转载请注明出处，[点击此处](https://shichaohui.github.io/) 查看更多精彩内容</small>
 
 [Cocos Creator 文档 -- 存储和读取用户数据](https://docs.cocos.com/creator/manual/zh/advanced-topics/data-storage.html)
 

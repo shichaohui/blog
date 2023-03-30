@@ -9,7 +9,7 @@ categories:
  - Android
 ---
 
-> <small>转载请注明出处，[点击此处](https://shichaohui.github.io/) 查看更多精彩内容。</small>
+> <small>转载请注明出处，[点击此处](https://shichaohui.github.io/) 查看更多精彩内容</small>
 
 下拉刷新的 `RecyclerView`，兼有上拉加载更多、添加头部、定制脚部功能，下拉刷新使用 `SwipeRefreshLayout`。
 

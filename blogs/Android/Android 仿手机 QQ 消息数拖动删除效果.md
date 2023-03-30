@@ -8,7 +8,7 @@ categories:
  - Android
 ---
 
-> <small>转载请注明出处，[点击此处](https://shichaohui.github.io/) 查看更多精彩内容。</small>
+> <small>转载请注明出处，[点击此处](https://shichaohui.github.io/) 查看更多精彩内容</small>
 
 仿手机 QQ 消息数拖动删除效果，本效果的实现由[这里](http://www.eoeandroid.com/forum.php?mod=viewthread&tid=909319)的项目修改而来，原项目使用稍显麻烦，且只能使用在 `ListView` 及 `ScrollView` 中。
 

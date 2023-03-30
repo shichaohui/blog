@@ -8,7 +8,7 @@ categories:
  - Android
 ---
 
-> <small>转载请注明出处，[点击此处](https://shichaohui.github.io/) 查看更多精彩内容。</small>
+> <small>转载请注明出处，[点击此处](https://shichaohui.github.io/) 查看更多精彩内容</small>
 
 `ScrollView` 中嵌套 `GridView` （已重写），就是那种按照网上的方法。`GridView` 重写以下方法解决不能完全显示的问题。
 

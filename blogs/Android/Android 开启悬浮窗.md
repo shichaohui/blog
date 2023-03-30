@@ -9,7 +9,7 @@ categories:
  - Android
 ---
 
-> <small>转载请注明出处，[点击此处](https://shichaohui.github.io/) 查看更多精彩内容。</small>
+> <small>转载请注明出处，[点击此处](https://shichaohui.github.io/) 查看更多精彩内容</small>
 
 开启全局的悬浮窗（即覆盖在所有 `Activity` 上的悬浮窗）需要使用 `Application` 的 `Window` ，即使用 `Application Context`获取 `WindowManager`。
 

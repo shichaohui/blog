@@ -8,7 +8,7 @@ categories:
  - Android
 ---
 
-> <small>转载请注明出处，[点击此处](https://shichaohui.github.io/) 查看更多精彩内容。</small>
+> <small>转载请注明出处，[点击此处](https://shichaohui.github.io/) 查看更多精彩内容</small>
 
 以下代码是基于百度云网盘：http://pan.baidu.com/s/1dD1Xo8T 中的 demo 进行优化及功能添加。
 

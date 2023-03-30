@@ -9,7 +9,7 @@ categories:
  - Android
 ---
 
-> <small>转载请注明出处，[点击此处](https://shichaohui.github.io/) 查看更多精彩内容。</small>
+> <small>转载请注明出处，[点击此处](https://shichaohui.github.io/) 查看更多精彩内容</small>
 
 ViewFlipper 和 AdapterViewFlipper 有较大的相似性，它们可以控制组件切换的动画效果。它们的区别是：ViewFlipper 需要通过 addView(View v) 方法或者在布局文件中添加多个 View，而 AdapterViewFlipper 只需要传入一个 Adapter，Adapter 将会负责提供多个 View。  ViewFlipper 不能手动滚动。
 

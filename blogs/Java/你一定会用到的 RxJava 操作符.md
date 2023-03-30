@@ -7,7 +7,7 @@ categories:
  - Java
 ---
 
-> <small>转载请注明出处，[点击此处](https://shichaohui.github.io/) 查看更多精彩内容。</small>
+> <small>转载请注明出处，[点击此处](https://shichaohui.github.io/) 查看更多精彩内容</small>
 
 **阅读本文前请先了解 [RxJava](https://github.com/ReactiveX/RxJava)  的基本使用。**
 

@@ -9,7 +9,7 @@ categories:
  - Android
 ---
 
-> <small>转载请注明出处，[点击此处](https://shichaohui.github.io/) 查看更多精彩内容。</small>
+> <small>转载请注明出处，[点击此处](https://shichaohui.github.io/) 查看更多精彩内容</small>
 
 QQ 空间相信大家都用过，是否觉得它的下拉刷新很酷呢？今天就来自己实现这个控件。
 

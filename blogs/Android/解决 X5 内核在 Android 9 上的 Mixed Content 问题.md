@@ -8,7 +8,7 @@ categories:
  - Android
 ---
 
-> <small>转载请注明出处，[点击此处](https://shichaohui.github.io/) 查看更多精彩内容。</small>
+> <small>转载请注明出处，[点击此处](https://shichaohui.github.io/) 查看更多精彩内容</small>
 
 > I/chromium: [INFO:CONSOLE(0)] "Mixed Content: The page at 'https://xxx' was loaded over HTTPS, but requested an insecure image 'http://xxx'. This request has been blocked; the content must be served over HTTPS.", source: https://xxx) (0)
 

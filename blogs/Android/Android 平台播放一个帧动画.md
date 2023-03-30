@@ -9,7 +9,7 @@ categories:
  - Android
 ---
 
-> <small>转载请注明出处，[点击此处](https://shichaohui.github.io/) 查看更多精彩内容。</small>
+> <small>转载请注明出处，[点击此处](https://shichaohui.github.io/) 查看更多精彩内容</small>
 
 众所周知，`Android` 中动画分为两种，一是 `Tween` 动画，主要通过 `ObjectAnimation`（如 `TranslateAnimation` ）实现，可实现平移、旋转、缩放、淡入淡出等动画效果；还有一种是 `Frame` 动画，即帧动画，通过不播放连续的图片实现。本博客为大家讲解Frame动画的实现。
 

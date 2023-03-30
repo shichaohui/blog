@@ -9,7 +9,7 @@ categories:
  - Android
 ---
 
-> <small>转载请注明出处，[点击此处](https://shichaohui.github.io/) 查看更多精彩内容。</small>
+> <small>转载请注明出处，[点击此处](https://shichaohui.github.io/) 查看更多精彩内容</small>
 
 项目要求在应用运行过程中生成了桌面快捷方式，这个很简单，网上很多资料，但是除了这个还要在应用中修改这些快捷方式的图标和名字，找了很久没有找到方法。
 

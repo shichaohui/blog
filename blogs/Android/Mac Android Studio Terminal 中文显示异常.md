@@ -8,7 +8,7 @@ categories:
  - Android
 ---
 
-> <small>转载请注明出处，[点击此处](https://shichaohui.github.io/) 查看更多精彩内容。</small>
+> <small>转载请注明出处，[点击此处](https://shichaohui.github.io/) 查看更多精彩内容</small>
 
 两个月前为了方便编写 `Kotlin` 代码，下载了 `Android Studio 3.0` 预览版，撸代码、Build、安装、一切正常。到了提交代码的时候懵逼了，`Terminal` 中输入中文居然变成了 `Unicode` 编码，就像这样：
 
