@@ -7,7 +7,7 @@ categories:
  - Android
 ---
 
-> 转载请注明出处，[点击此处](https://shichaohui.github.io/)可了解 [StoneHui](https://shichaohui.github.io/) 更多信息
+> <small>转载请注明出处，[点击此处](https://shichaohui.github.io/) 查看更多精彩内容。</small>
 
 最近得空，就去一些招聘网站做了些面试题，为方便大家共同学习，`Android` 相关的就在这篇博客里记录一下，以后有空会持续更新，大家有更好的答案也可以留言告诉我。
 

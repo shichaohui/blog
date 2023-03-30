@@ -8,7 +8,7 @@ categories:
  - Android
 ---
 
-> 转载请注明出处，[点击此处](https://shichaohui.github.io/)可了解 [StoneHui](https://shichaohui.github.io/) 更多信息
+> <small>转载请注明出处，[点击此处](https://shichaohui.github.io/) 查看更多精彩内容。</small>
 
 今天换了台手机进行测试，但是手机连上之后却不能选择要输出 log 的应用（选应用的位置显示 `No Debuggable Applications`），导致 `logcat` 中不断打印出一行行 log，而从这茫茫 log 中找出自己需要的 log 是恨痛苦的，咋办咧？Google 呗。  
 

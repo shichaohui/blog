@@ -11,7 +11,7 @@ categories:
  - Android
 ---
 
-> 转载请注明出处，[点击此处](https://shichaohui.github.io/)可了解 [StoneHui](https://shichaohui.github.io/) 更多信息
+> <small>转载请注明出处，[点击此处](https://shichaohui.github.io/) 查看更多精彩内容。</small>
 
 前些天看到有人在论坛上问这种效果怎么实现，没写过也没用过这个功能，网上查了一下，大多是使用 `ViewPager` + `GridView` 或者 `HorizontalScrollView` + `GridView` 实现，不过貌似有点复杂，太懒，没仔细看。这两天学习 `RecyclerView` 的使用（网上有很多文章，建议大家阅读本博客的时候先去了解一下），发现 `RecyclerView` 可以实现 `GridView` 的横向滚动效果，不过没有分页，因此决定自己写一个。
 

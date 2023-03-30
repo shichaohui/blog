@@ -8,7 +8,7 @@ categories:
  - Android
 ---
 
-> 转载请注明出处，[点击此处](https://shichaohui.github.io/)可了解 [StoneHui](https://shichaohui.github.io/) 更多信息
+> <small>转载请注明出处，[点击此处](https://shichaohui.github.io/) 查看更多精彩内容。</small>
 
 使用 `TimePickerDialog` 时，点击对话框的确定按钮，会添加两条数据，原因是 `OnTimeSetListener` 中的 `onTimeSe()` 执行了两次，点击确定按钮时执行一次，对话框取消时，`TimePickerDialog` 的 `onStop()` 方法中也执行了一次。解决方法：重写 `TimePickerDialog` 类，并覆盖 `onStop()`。
 
