@@ -40,7 +40,7 @@ categories:
 
 首先我们需要定义单元格和表格行的数据结构。
 
-```TypeScript
+```ts
 /**
  * 表格单元格配置
  */
@@ -85,7 +85,7 @@ export type TableRow = (TableCell | undefined)[];
 
 基于如上表格单元格和行的定义，我们可以编写一个组件用于渲染表格。
 
-```vue
+```html
 <template>
   <div class="custom_table">
     <table>
@@ -244,7 +244,7 @@ npm install exceljs
 
 ### 根据表格配置生成 excel 文件
 
-```TypeScript
+```ts
 import ExcelJS, { Workbook, Worksheet } from "exceljs";
 
 /**
@@ -353,7 +353,7 @@ function convertColumnNo(num: number) {
 
 ### 下载 excel 文件
 
-```TypeScript
+```ts
 /**
  * 下载为 excel 文件
  * @param workbook excel 工作簿对象
@@ -379,7 +379,7 @@ export async function downloadExcel(workbook: ExcelJS.Workbook, fileName: string
 
 **函数声明**
 
-```TypeScript
+```ts
 /**
  * 渲染图片等非普通文本的数据
  */
@@ -397,7 +397,7 @@ export type RenderAdditionalData = (
 
 将图片等内容的处理插入到 `generateExcel` 函数：
 
-```TypeScript
+```ts
 async function generateExcel(
   rowList: TableRow[],
   colWidth: number | number[] = [],
@@ -430,4 +430,4 @@ async function generateExcel(
 
 [exceljs] 对图片的渲染请查询官方文档。
 
-至此，即可完成复杂 excel 表格的渲染和导出。
+至此，即可完成复杂 excel 表格的渲染和导出。如需其他配置可自行扩展。
